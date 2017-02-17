@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" type="text/css" href="victor.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <center><h1>Javascript Opdracht</h1></center> 
+<div id="opmaak">
+
+    Breedte: <input id="breedte" type="text" name="breedte" value="" onchange="myFunction()" /> pixels. <br><br>
+    Hoogte: <input id="hoogte" type="text" name="hoogte" value="" onchange="myFunction()" /> pixels. <br>
+<br>
+
+
+<select id="kleur">
+    <option  value="green" onchange="myFunction()">Groen</option>
+<option  value="red" onchange="myFunction()">Rood</option>
+    <option value="blue" onchange="myFunction()">Blauw</option>
+    <option value="yellow" onchange="myFunction()">Geel</option>
+</select>
+
+
+<P><br></p>
+
+<div id="vierkant">Box 1</div>
+<br>
+<div id="vierkant2">Box 2</div>
+<br>
+<div id="vierkant3">Box 3</div>
+
+</div>
+<script>
+
+    function myFunction() {
+        
+//vierkant 1
+        document.getElementById('vierkant').style.width=document.getElementById("breedte").value + "px";
+        document.getElementById('vierkant').style.height=document.getElementById("hoogte").value + "px";
+        document.getElementById("vierkant").style.backgroundColor = document.getElementById("kleur").value;
+//vierkant 2
+        document.getElementById('vierkant2').style.width=document.getElementById("breedte").value + "px";
+        document.getElementById('vierkant2').style.height=document.getElementById("hoogte").value + "px";
+        document.getElementById("vierkant2").style.backgroundColor = document.getElementById("kleur").value;
+//vierkant 3
+        document.getElementById('vierkant3').style.width=document.getElementById("breedte").value + "px";
+        document.getElementById('vierkant3').style.height=document.getElementById("hoogte").value + "px";
+        document.getElementById("vierkant3").style.backgroundColor = document.getElementById("kleur").value;
+}
+
+</script> 
+</body>
+</html>
