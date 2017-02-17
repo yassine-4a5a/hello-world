@@ -1,0 +1,36 @@
+
+<html>
+<head> <link rel="stylesheet" type="text/css" href="beoordelingenlijst.css"></head>
+<body>
+<div id="opmaak">
+Voer uw cijfer in(tussen 0 en 100): <input type="text" id="myText" value="">
+
+<button onclick="myFunction()">Resultaat</button>
+<br><br>
+<div  id="demo"></div>
+</div>
+<script>
+function myFunction() {
+var x = document.getElementById("myText").value;
+if( x <= 49){
+
+   return document.getElementById("demo").innerHTML ="Het cijfer is " + x + " dus een onvoldoende. " ;
+}
+else if ( x > 49 && x < 58){
+   return document.getElementById("demo").innerHTML ="Het cijfer is " + x + " dus een matig. " ;
+   }
+   else if ( x > 59 && x < 73){
+   return document.getElementById("demo").innerHTML ="Het cijfer is " + x + " dus een voldoende. " ;
+}
+   else if ( x > 74 && x < 99){
+   return document.getElementById("demo").innerHTML ="Het cijfer is " + x + " dus een goed " ;
+}
+else {
+   return document.getElementById("demo").innerHTML ="Uw heeft een verkeerde getal ingevoerd " ;
+
+}
+}
+</script>
+
+</body>
+</html>
